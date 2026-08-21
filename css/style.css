@@ -204,7 +204,7 @@ img {
 }
 
 .brand-logo img {
-  height: 46px;
+  height: 90px;
   width: auto;
 }
 
@@ -1035,6 +1035,11 @@ img {
   .section {
     padding: 68px 0;
   }
+
+  .brand-logo img {
+  height: 50px;
+  width: auto;
+}
 }
 
 @media (max-width: 575px) {
