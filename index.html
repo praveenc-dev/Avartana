@@ -36,6 +36,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <!-- Structured data -->
   <script type="application/ld+json">
 {
@@ -60,21 +62,21 @@
       </a>
 
       <nav class="main-nav">
-        <a href="#about">Guru</a>
-        <a href="#forms">Dance Forms</a>
-        <a href="#courses">Courses</a>
-        <a href="#videos">Videos</a>
-        <a href="#news">Journal</a>
+        <a href="about.html">About Us</a>
+        <a href="#forms">Courses</a>
+        <a href="#courses">Productions</a>
+        <a href="#videos">Gallery</a>
+        <a href="journal.html">Journal</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="header-cta">
         <a href="#" class="d-none d-md-inline-block" style="font-size:0.85rem;">Login</a>
         <a href="#courses" class="btn-outline">Enroll Now</a>
-      
+
       </div>
 
-        <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
     </div>
   </header>
 
@@ -270,16 +272,107 @@
     </div>
   </div>
 
+
+  <!-- Vision & Mission Section -->
+  <section class="section vision-mission-section" id="vision-mission">
+    <div class="container-custom">
+
+      <div class=" text-center">
+        <span class="eyebrow">Our Purpose</span>
+        <h2>Vision &amp; Mission</h2>
+        <p>
+          Nurturing the next generation of artists through tradition,
+          rhythm, creativity, and excellence.
+        </p>
+      </div>
+
+      <div class="vision-mission-grid">
+
+        <!-- Vision -->
+        <div class="vm-card">
+          <div class="vm-icon">
+            <i class="bi bi-stars"></i>
+          </div>
+
+          <div class="vm-content">
+            <span class="eyebrow">Our Vision</span>
+
+            <h3>Preserving Tradition, Inspiring the Future</h3>
+
+            <p>
+              To become a globally recognized academy for Bharatanatyam,
+              Nattuvangam, rhythm, and Indian classical dance education —
+              nurturing confident artists who preserve tradition while
+              embracing creativity, innovation, and contemporary learning.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Mission -->
+        <div class="vm-card">
+          <div class="vm-icon">
+            <i class="bi bi-music-note-beamed"></i>
+          </div>
+
+          <div class="vm-content">
+            <span class="eyebrow">Our Mission</span>
+
+            <h3>Empowering Artists Through Authentic Learning</h3>
+
+            <p>
+              Our mission is to make authentic Indian classical dance
+              education accessible to learners across the world while
+              developing strong foundations in rhythm, technique,
+              Nattuvangam, repertoire, and performance.
+            </p>
+
+            <ul class="mission-list">
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                Preserve the richness and values of Indian classical dance.
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                Build skilled and confident performers.
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                Encourage creativity, rhythm, and artistic expression.
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                Provide structured global learning opportunities.
+              </li>
+
+              <li>
+                <i class="bi bi-check-circle-fill"></i>
+                Empower future Gurus and Nattuvanars.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- ================= ABOUT THE GURU ================= -->
-  <section class="section" id="about">
+  <section class="section about-us" id="about">
     <div class="container-custom">
       <div class="about-grid">
         <div class="about-portrait">
-          <img class="about-img" src="images/guru-ranjani.jpg" alt="Portrait of Guru Dr. Ranjani Ghoshal, founder of Avartana">
+          <img class="about-img" src="images/aboutus.JPG"
+            alt="Portrait of Guru Dr. Ranjani Ghoshal, founder of Avartana">
         </div>
         <div class="about-copy">
           <span class="eyebrow">About the Guru</span>
           <h2>A lineage devoted to rhythm, repertoire and the revival of classical form.</h2>
+          <h3>Dr. Ranjani Ghoshal</h3>
           <p>Trained under her father and Guru, Dr. K. Rajamanickam, and now Director of Kalaiaruvi — School of Dance
             and Music, Dr. Ranjani Ghoshal has spent over two decades shaping performers, teachers and choreographers —
             rooted in tradition, open to innovation.</p>
@@ -302,7 +395,7 @@
     <div class="container-custom">
 
       <div class="section-head">
-        <span class="eyebrow">Explore by Discipline</span>
+        <span class="eyebrow">Upcoming Events</span>
         <h2>Dance forms &amp; disciplines</h2>
         <p>
           Choose a classical form to explore — each path moves from fundamentals
@@ -382,57 +475,406 @@
     </div>
   </section>
 
-  <!-- ================= COURSES ================= -->
+  <!-- =================Nattuvangam  COURSES ================= -->
   <section class="section" id="courses">
     <div class="container-custom">
+
       <div class="d-flex justify-content-between align-items-end flex-wrap gap-3" style="margin-bottom:56px;">
+
         <div class="section-head" style="margin-bottom:0;">
-          <span class="eyebrow">Our Best Courses</span>
-          <h2>Newest &amp; trending courses</h2>
+          <span class="eyebrow">Nattuvangam Courses</span>
+          <h2>Newest &amp; Trending Courses</h2>
         </div>
+
         <a href="#" class="btn-outline">View All Courses</a>
       </div>
 
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-thumb">
-            <img src="images/gallery-3.jpg" alt="Varnam Repertoire course thumbnail">
-            <span class="course-price">₹4,500</span>
+
+      <!-- Course Swiper -->
+      <div class="swiper courseSwiper">
+
+        <div class="swiper-wrapper">
+
+          <!-- Course 1 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-3.jpg" alt="Varnam Repertoire course thumbnail">
+
+                <span class="course-price">₹4,500</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Repertoire</span>
+                  <span>8h 30m</span>
+                </div>
+
+                <h3>Varnam Repertoire Intensive</h3>
+
+                <p>
+                  Full breakdown of a classical Varnam — adavus,
+                  abhinaya and stage-ready choreography.
+                </p>
+
+                <div class="course-footer">
+                  <span>240 students</span>
+                  <span>★ 4.9</span>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <div class="course-body">
-            <div class="course-meta"><span>Repertoire</span><span>8h 30m</span></div>
-            <h3>Varnam Repertoire Intensive</h3>
-            <p>Full breakdown of a classical Varnam — adavus, abhinaya and stage-ready choreography.</p>
-            <div class="course-footer"><span>240 students</span><span>★ 4.9</span></div>
+
+
+          <!-- Course 2 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/home-page-1.jpg" alt="Rhythm and Konnakol course thumbnail">
+
+                <span class="course-price">₹3,200</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Rhythm</span>
+                  <span>6h 10m</span>
+                </div>
+
+                <h3>Rhythm &amp; Konnakol Foundations</h3>
+
+                <p>
+                  Build a solid rhythmic vocabulary through Konnakol
+                  drills and talam practice.
+                </p>
+
+                <div class="course-footer">
+                  <span>310 students</span>
+                  <span>★ 4.8</span>
+                </div>
+
+              </div>
+            </div>
           </div>
+
+
+          <!-- Course 3 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-3.jpg" alt="Jathi creation course thumbnail">
+
+                <span class="course-price">₹5,000</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Nattuvangam</span>
+                  <span>9h 45m</span>
+                </div>
+
+                <h3>Jathi Creation for Nattuvanars</h3>
+
+                <p>
+                  Compose and notate original jathis, from simple
+                  korvais to full teermanams.
+                </p>
+
+                <div class="course-footer">
+                  <span>180 students</span>
+                  <span>★ 5.0</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 4 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-1.jpg" alt="Bharatanatyam repertoire course thumbnail">
+
+                <span class="course-price">₹4,000</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Bharatanatyam</span>
+                  <span>7h 20m</span>
+                </div>
+
+                <h3>Bharatanatyam Repertoire Masterclass</h3>
+
+                <p>
+                  Explore classical repertoire with detailed technique,
+                  expressions and performance guidance.
+                </p>
+
+                <div class="course-footer">
+                  <span>220 students</span>
+                  <span>★ 4.9</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 5 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-2.jpg" alt="Nattuvangam masterclass course thumbnail">
+
+                <span class="course-price">₹5,500</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Nattuvangam</span>
+                  <span>10h 15m</span>
+                </div>
+
+                <h3>Nattuvangam Masterclass</h3>
+
+                <p>
+                  Learn advanced Nattuvangam patterns, sollukattu,
+                  coordination and stage performance techniques.
+                </p>
+
+                <div class="course-footer">
+                  <span>195 students</span>
+                  <span>★ 5.0</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="course-card">
-          <div class="course-thumb">
-            <img src="images/home-page-1.jpg" alt="Rhythm and Konnakol course thumbnail">
-            <span class="course-price">₹3,200</span>
-          </div>
-          <div class="course-body">
-            <div class="course-meta"><span>Rhythm</span><span>6h 10m</span></div>
-            <h3>Rhythm &amp; Konnakol Foundations</h3>
-            <p>Build a solid rhythmic vocabulary through Konnakol drills and talam practice.</p>
-            <div class="course-footer"><span>310 students</span><span>★ 4.8</span></div>
-          </div>
-        </div>
 
-        <div class="course-card">
-          <div class="course-thumb">
-            <img src="images/gallery-3.jpg" alt="Jathi creation course thumbnail">
-            <span class="course-price">₹5,000</span>
-          </div>
-          <div class="course-body">
-            <div class="course-meta"><span>Nattuvangam</span><span>9h 45m</span></div>
-            <h3>Jathi Creation for Nattuvanars</h3>
-            <p>Compose and notate original jathis, from simple korvais to full teermanams.</p>
-            <div class="course-footer"><span>180 students</span><span>★ 5.0</span></div>
-          </div>
-        </div>
+        <!-- Navigation -->
+        <div class="swiper-button-prev course-prev"></div>
+        <div class="swiper-button-next course-next"></div>
+
       </div>
+
+    </div>
+  </section>
+
+
+  <!-- =================  Bharatanatiyam courses ================= -->
+  <section class="section" id="courses">
+    <div class="container-custom">
+
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3" style="margin-bottom:56px;">
+
+        <div class="section-head" style="margin-bottom:0;">
+          <span class="eyebrow">Bharatanatiyam Courses</span>
+          <h2>Newest &amp; Trending Courses</h2>
+        </div>
+
+        <a href="#" class="btn-outline">View All Courses</a>
+      </div>
+
+
+      <!-- Course Swiper -->
+      <div class="swiper courseSwiper">
+
+        <div class="swiper-wrapper">
+
+          <!-- Course 1 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-3.jpg" alt="Varnam Repertoire course thumbnail">
+
+                <span class="course-price">₹4,500</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Repertoire</span>
+                  <span>8h 30m</span>
+                </div>
+
+                <h3>Varnam Repertoire Intensive</h3>
+
+                <p>
+                  Full breakdown of a classical Varnam — adavus,
+                  abhinaya and stage-ready choreography.
+                </p>
+
+                <div class="course-footer">
+                  <span>240 students</span>
+                  <span>★ 4.9</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 2 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/home-page-1.jpg" alt="Rhythm and Konnakol course thumbnail">
+
+                <span class="course-price">₹3,200</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Rhythm</span>
+                  <span>6h 10m</span>
+                </div>
+
+                <h3>Rhythm &amp; Konnakol Foundations</h3>
+
+                <p>
+                  Build a solid rhythmic vocabulary through Konnakol
+                  drills and talam practice.
+                </p>
+
+                <div class="course-footer">
+                  <span>310 students</span>
+                  <span>★ 4.8</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 3 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-3.jpg" alt="Jathi creation course thumbnail">
+
+                <span class="course-price">₹5,000</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Nattuvangam</span>
+                  <span>9h 45m</span>
+                </div>
+
+                <h3>Jathi Creation for Nattuvanars</h3>
+
+                <p>
+                  Compose and notate original jathis, from simple
+                  korvais to full teermanams.
+                </p>
+
+                <div class="course-footer">
+                  <span>180 students</span>
+                  <span>★ 5.0</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 4 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-1.jpg" alt="Bharatanatyam repertoire course thumbnail">
+
+                <span class="course-price">₹4,000</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Bharatanatyam</span>
+                  <span>7h 20m</span>
+                </div>
+
+                <h3>Bharatanatyam Repertoire Masterclass</h3>
+
+                <p>
+                  Explore classical repertoire with detailed technique,
+                  expressions and performance guidance.
+                </p>
+
+                <div class="course-footer">
+                  <span>220 students</span>
+                  <span>★ 4.9</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Course 5 -->
+          <div class="swiper-slide">
+            <div class="course-card">
+
+              <div class="course-thumb">
+                <img src="images/gallery-2.jpg" alt="Nattuvangam masterclass course thumbnail">
+
+                <span class="course-price">₹5,500</span>
+              </div>
+
+              <div class="course-body">
+
+                <div class="course-meta">
+                  <span>Nattuvangam</span>
+                  <span>10h 15m</span>
+                </div>
+
+                <h3>Nattuvangam Masterclass</h3>
+
+                <p>
+                  Learn advanced Nattuvangam patterns, sollukattu,
+                  coordination and stage performance techniques.
+                </p>
+
+                <div class="course-footer">
+                  <span>195 students</span>
+                  <span>★ 5.0</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev course-prev"></div>
+        <div class="swiper-button-next course-next"></div>
+
+      </div>
+
     </div>
   </section>
 
@@ -682,6 +1124,389 @@
       </div>
     </div>
   </section>
+
+  <!-- ================= TESTIMONIALS video ================= -->
+  <section class="section " id="testimonials">
+    <div class="container-custom">
+
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3" style="margin-bottom:56px;">
+
+        <div class="section-head" style="margin-bottom:0;">
+          <span class="eyebrow">Video Testimony</span>
+          <h2>What Our Students Say</h2>
+          <p>
+            Hear directly from our students about their learning journey,
+            experience, and growth at Avartana.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Testimonial Swiper -->
+      <div class="swiper testimonySwiper">
+
+        <div class="swiper-wrapper">
+
+          <!-- Testimony 1 -->
+          <div class="swiper-slide">
+            <div class="testimony-card">
+
+              <div class="testimony-video">
+
+                <video class="testimony-player" poster="images/gallery-1.jpg" preload="metadata" playsinline>
+
+                  <source src="/images/Ms. Kavvinah Murali - Testimonial Video.mp4" type="video/mp4">
+
+                  Your browser does not support the video tag.
+                </video>
+
+
+                <!-- Video Controls -->
+                <div class="video-controls">
+
+                  <button class="video-play" type="button" aria-label="Play video">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+
+                  <div class="video-progress">
+                    <div class="video-progress-bar"></div>
+                  </div>
+
+                  <button class="video-mute" type="button" aria-label="Mute video">
+                    <i class="bi bi-volume-up-fill"></i>
+                  </button>
+
+                  <button class="video-fullscreen" type="button" aria-label="Fullscreen">
+                    <i class="bi bi-fullscreen"></i>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="testimony-content">
+                <h3>Student Testimony</h3>
+                <span>Avartana Student</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Testimony 2 -->
+          <div class="swiper-slide">
+            <div class="testimony-card">
+
+              <div class="testimony-video">
+
+                <video class="testimony-player" poster="images/gallery-2.jpg" preload="metadata" playsinline>
+
+                  <source src="/images/Ms. Soledad Malan - Testimonial Video.mp4" type="video/mp4">
+
+                  Your browser does not support the video tag.
+                </video>
+
+
+                <div class="video-controls">
+
+                  <button class="video-play" type="button" aria-label="Play video">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+
+                  <div class="video-progress">
+                    <div class="video-progress-bar"></div>
+                  </div>
+
+                  <button class="video-mute" type="button" aria-label="Mute video">
+                    <i class="bi bi-volume-up-fill"></i>
+                  </button>
+
+                  <button class="video-fullscreen" type="button" aria-label="Fullscreen">
+                    <i class="bi bi-fullscreen"></i>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="testimony-content">
+                <h3>Learning Experience</h3>
+                <span>Avartana Student</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Testimony 3 -->
+          <div class="swiper-slide">
+            <div class="testimony-card">
+
+              <div class="testimony-video">
+
+                <video class="testimony-player" poster="images/gallery-3.jpg" preload="metadata" playsinline>
+
+                  <source src="videos/testimony-3.mp4" type="video/mp4">
+
+                  Your browser does not support the video tag.
+                </video>
+
+
+                <div class="video-controls">
+
+                  <button class="video-play" type="button" aria-label="Play video">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+
+                  <div class="video-progress">
+                    <div class="video-progress-bar"></div>
+                  </div>
+
+                  <button class="video-mute" type="button" aria-label="Mute video">
+                    <i class="bi bi-volume-up-fill"></i>
+                  </button>
+
+                  <button class="video-fullscreen" type="button" aria-label="Fullscreen">
+                    <i class="bi bi-fullscreen"></i>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="testimony-content">
+                <h3>My Journey with Avartana</h3>
+                <span>Avartana Student</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Testimony 4 -->
+          <div class="swiper-slide">
+            <div class="testimony-card">
+
+              <div class="testimony-video">
+
+                <video class="testimony-player" poster="images/banner-2.jpg" preload="metadata" playsinline>
+
+                  <source src="videos/testimony-4.mp4" type="video/mp4">
+
+                  Your browser does not support the video tag.
+                </video>
+
+
+                <div class="video-controls">
+
+                  <button class="video-play" type="button" aria-label="Play video">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+
+                  <div class="video-progress">
+                    <div class="video-progress-bar"></div>
+                  </div>
+
+                  <button class="video-mute" type="button" aria-label="Mute video">
+                    <i class="bi bi-volume-up-fill"></i>
+                  </button>
+
+                  <button class="video-fullscreen" type="button" aria-label="Fullscreen">
+                    <i class="bi bi-fullscreen"></i>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="testimony-content">
+                <h3>Rhythm &amp; Nattuvangam Journey</h3>
+                <span>Avartana Student</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev testimony-prev"></div>
+        <div class="swiper-button-next testimony-next"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination testimony-pagination"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- =================  blog ================= -->
+  <section class="section section-alt" id="blog">
+  <div class="container-custom">
+
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3"
+         style="margin-bottom:56px;">
+
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">Our Blog</span>
+        <h2>Insights, Rhythm &amp; Dance</h2>
+        <p>
+          Explore stories, techniques, and insights from the world of
+          Bharatanatyam, Nattuvangam, rhythm, and Indian classical dance.
+        </p>
+      </div>
+
+      <a href="blog.html" class="btn-outline">View All Blogs</a>
+    </div>
+
+
+    <div class="blog-grid">
+
+      <!-- Blog 1 -->
+      <article class="blog-card">
+
+        <div class="blog-thumb">
+          <img src="images/gallery-1.jpg"
+               alt="Importance of rhythm in Bharatanatyam">
+
+          <span class="blog-category">Rhythm</span>
+        </div>
+
+        <div class="blog-body">
+
+          <div class="blog-meta">
+            Rhythm · 12 Aug 2026 · 5 Min Read
+          </div>
+
+          <h3>
+            The Importance of Rhythm in Bharatanatyam
+          </h3>
+
+          <p>
+            Discover how rhythm forms the foundation of Bharatanatyam
+            and how understanding tala can transform a dancer's performance.
+          </p>
+
+          <a href="blog-rhythm.html" class="blog-link">
+            Read More →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- Blog 2 -->
+      <article class="blog-card">
+
+        <div class="blog-thumb">
+          <img src="images/gallery-2.jpg"
+               alt="Nattuvangam learning">
+
+          <span class="blog-category">Nattuvangam</span>
+        </div>
+
+        <div class="blog-body">
+
+          <div class="blog-meta">
+            Nattuvangam · 05 Aug 2026 · 6 Min Read
+          </div>
+
+          <h3>
+            Nattuvangam: The Heartbeat Behind Every Performance
+          </h3>
+
+          <p>
+            Learn about the role of the Nattuvanar and how sollukattu,
+            tala, and coordination bring a Bharatanatyam performance to life.
+          </p>
+
+          <a href="blog-nattuvangam.html" class="blog-link">
+            Read More →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- Blog 3 -->
+      <article class="blog-card">
+
+        <div class="blog-thumb">
+          <img src="images/gallery-3.jpg"
+               alt="Bharatanatyam practice">
+
+          <span class="blog-category">Bharatanatyam</span>
+        </div>
+
+        <div class="blog-body">
+
+          <div class="blog-meta">
+            Dance · 28 Jul 2026 · 7 Min Read
+          </div>
+
+          <h3>
+            How to Build a Consistent Bharatanatyam Practice Routine
+          </h3>
+
+          <p>
+            Simple and effective practice strategies to improve technique,
+            stamina, expressions, rhythm, and stage confidence.
+          </p>
+
+          <a href="blog-practice.html" class="blog-link">
+            Read More →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- Blog 4 -->
+      <article class="blog-card">
+
+        <div class="blog-thumb">
+          <img src="images/banner-2.jpg"
+               alt="Learning Konnakol">
+
+          <span class="blog-category">Konnakol</span>
+        </div>
+
+        <div class="blog-body">
+
+          <div class="blog-meta">
+            Rhythm · 20 Jul 2026 · 5 Min Read
+          </div>
+
+          <h3>
+            Why Every Dancer Should Learn Konnakol
+          </h3>
+
+          <p>
+            Understand how Konnakol develops rhythmic awareness,
+            timing, coordination, and confidence in classical dancers.
+          </p>
+
+          <a href="blog-konnakol.html" class="blog-link">
+            Read More →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- ================= CTA BAND ================= -->
   <section class="section" style="padding-top:0;">
@@ -960,6 +1785,294 @@
             button.innerHTML = "&#9654;";
           }
         }
+
+      });
+
+    });
+
+  });
+</script>
+
+<script>
+  const courseSwiper = new Swiper(".courseSwiper", {
+
+    loop: true,
+
+    speed: 700,
+
+    spaceBetween: 25,
+
+    slidesPerView: 3,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+
+    navigation: {
+      nextEl: ".course-next",
+      prevEl: ".course-prev"
+    },
+
+    breakpoints: {
+
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 25
+      }
+
+    }
+
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================
+       TESTIMONY SWIPER
+    ===================================== */
+
+    const testimonySwiper = new Swiper(".testimonySwiper", {
+
+      loop: true,
+
+      speed: 700,
+
+      spaceBetween: 25,
+
+      slidesPerView: 3,
+
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+
+      navigation: {
+        nextEl: ".testimony-next",
+        prevEl: ".testimony-prev"
+      },
+
+      pagination: {
+        el: ".testimony-pagination",
+        clickable: true
+      },
+
+      breakpoints: {
+
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 25
+        }
+
+      }
+
+    });
+
+
+    /* =====================================
+       VIDEO CONTROLS
+    ===================================== */
+
+    const videos = document.querySelectorAll(".testimony-player");
+
+
+    videos.forEach(function (video) {
+
+      const container = video.closest(".testimony-video");
+
+      const playBtn = container.querySelector(".video-play");
+      const muteBtn = container.querySelector(".video-mute");
+      const fullscreenBtn = container.querySelector(".video-fullscreen");
+
+      const progress = container.querySelector(".video-progress");
+      const progressBar = container.querySelector(".video-progress-bar");
+
+
+      /* PLAY / PAUSE */
+
+      playBtn.addEventListener("click", function () {
+
+        if (video.paused) {
+
+          /* Stop all other videos */
+
+          videos.forEach(function (otherVideo) {
+
+            if (otherVideo !== video) {
+
+              otherVideo.pause();
+
+              const otherContainer =
+                otherVideo.closest(".testimony-video");
+
+              const otherButton =
+                otherContainer.querySelector(".video-play");
+
+              otherButton.innerHTML =
+                '<i class="bi bi-play-fill"></i>';
+            }
+
+          });
+
+
+          video.play();
+
+          playBtn.innerHTML =
+            '<i class="bi bi-pause-fill"></i>';
+
+          /* Stop swiper autoplay */
+
+          testimonySwiper.autoplay.stop();
+
+        } else {
+
+          video.pause();
+
+          playBtn.innerHTML =
+            '<i class="bi bi-play-fill"></i>';
+
+        }
+
+      });
+
+
+      /* MUTE / UNMUTE */
+
+      muteBtn.addEventListener("click", function () {
+
+        video.muted = !video.muted;
+
+        if (video.muted) {
+
+          muteBtn.innerHTML =
+            '<i class="bi bi-volume-mute-fill"></i>';
+
+        } else {
+
+          muteBtn.innerHTML =
+            '<i class="bi bi-volume-up-fill"></i>';
+
+        }
+
+      });
+
+
+      /* PROGRESS BAR */
+
+      video.addEventListener("timeupdate", function () {
+
+        if (video.duration) {
+
+          const percentage =
+            (video.currentTime / video.duration) * 100;
+
+          progressBar.style.width =
+            percentage + "%";
+
+        }
+
+      });
+
+
+      /* CLICK PROGRESS */
+
+      progress.addEventListener("click", function (e) {
+
+        if (!video.duration) return;
+
+        const rect = progress.getBoundingClientRect();
+
+        const clickPosition =
+          (e.clientX - rect.left) / rect.width;
+
+        video.currentTime =
+          clickPosition * video.duration;
+
+      });
+
+
+      /* FULLSCREEN */
+
+      fullscreenBtn.addEventListener("click", function () {
+
+        if (video.requestFullscreen) {
+
+          video.requestFullscreen();
+
+        } else if (video.webkitRequestFullscreen) {
+
+          video.webkitRequestFullscreen();
+
+        }
+
+      });
+
+
+      /* VIDEO ENDED */
+
+      video.addEventListener("ended", function () {
+
+        playBtn.innerHTML =
+          '<i class="bi bi-play-fill"></i>';
+
+        progressBar.style.width = "0%";
+
+        testimonySwiper.autoplay.start();
+
+      });
+
+    });
+
+
+    /* =====================================
+       SLIDE CHANGE
+       STOP PLAYING VIDEO
+    ===================================== */
+
+    testimonySwiper.on("slideChange", function () {
+
+      videos.forEach(function (video) {
+
+        video.pause();
+
+        video.currentTime = 0;
+
+        const container =
+          video.closest(".testimony-video");
+
+        const playBtn =
+          container.querySelector(".video-play");
+
+        const progressBar =
+          container.querySelector(".video-progress-bar");
+
+        playBtn.innerHTML =
+          '<i class="bi bi-play-fill"></i>';
+
+        progressBar.style.width = "0%";
 
       });
 
