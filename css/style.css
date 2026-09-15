@@ -93,7 +93,7 @@ img {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 25px 0;
 }
 
 .section-alt {
@@ -2521,6 +2521,8 @@ img {
   color: var(--color-gold-light);
   font-size: 1.1rem;
   margin-bottom: 26px;
+  border-radius: 10px;
+  /* background: var(--color-bg-alt); */
 }
 
 .course-mentor {
@@ -2888,4 +2890,20 @@ img {
   .course-accordion .accordion-button {
     padding: 16px 18px;
   }
+}
+
+.icon-1{
+  font-size: 50px;
+}
+
+
+
+@media (min-width: 992px) {
+
+  .eligibility-card {
+    position: sticky;
+    top: 30px;
+    align-self: flex-start;
+  }
+
 }
